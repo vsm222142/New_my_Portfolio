@@ -1,0 +1,237 @@
+:root{
+  --box-shadow:5px 5px 10px 10px rgba(101,175,10,0.5);
+  --bg-color:rgb(40,47,97);
+}
+
+
+
+body{
+  background-color: rgb(11, 26, 51);
+  color: white;
+  /* overflow-x:hidden; */
+}
+
+/* Navbar section part */
+a{
+  text-decoration: none;
+  color: white;
+}
+.nav_bar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_bar .nav_items{
+  padding:16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.nav_bar .nav_items:hover{
+  border-bottom: 3px solid yellow;
+}
+
+/* Home section */
+
+.home{
+  display: flex;
+  height: 80vh;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.home .left{
+  width: 620px;
+  background-color: var(--bg-color);
+  text-align: center;
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
+}
+.home .right .img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: yellow; */
+}
+.home .right .img img{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  border: 5px solid yellow;
+  animation: superman 3s infinite ;
+  
+
+}
+
+@keyframes superman{
+  0%{
+      border-color: blue;
+      transform: translate(0,0px);
+      box-shadow: 10px 10px 100px 50px blue;
+  }
+  25%{
+      border-color: rgb(239, 244, 11);
+      box-shadow: 10px 10px 100px 50px rgb(239, 244, 11);
+  }
+  50%{
+     border-color: rgb(12, 12, 119);
+      transform: translate(0,10px);
+      box-shadow: 10px 10px 100px 50px rgb(12, 12, 119);
+  }
+  75%{
+      border-color: rgb(130, 217, 160);
+      
+      box-shadow: 10px 10px 100px 50px rgb(130, 217, 160);
+  }
+  100%{
+     border-color: rgb(50, 55, 205);
+      transform: translate(0,-0px);
+      box-shadow: 10px 10px 100px 50px rgb(50, 55, 205);
+  }
+}
+
+/* Experience Section */
+.about{
+  display: flex;
+  justify-content: space-between;
+}
+.image{
+  width: 480px;
+  height: 480px;
+  padding-top: 30px;
+  margin-right: 20px;
+  margin-top: 30px;
+  border-radius: 20px;
+  
+
+
+}
+
+.image img{
+  width: 480px;
+  height: 480px;
+     border-radius: 20px;
+
+}
+
+.about-items{
+  display: flex;
+  background-color: var(--bg-color);
+  padding: 30px;
+  margin: 20px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
+
+}
+
+/* Skills  */
+
+.skills{
+  width: 900px;
+}
+
+.skills .items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+ 
+}
+.skills .items .item{
+  width: calc(33.3333%);
+  background-color: black;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid yellow;
+  box-shadow: var(--box-shadow);
+}
+
+.skills .items .item img{
+  width: 70px;
+}
+
+/* Contact Selection */
+
+.contact-icon{
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-icon .items{
+  background-color: black;
+  margin: 10px;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border:2px solid yellow;
+}
+.contact-icon .items:hover{
+  background-color: var(--bg-color);
+  box-shadow: var(--box-shadow);
+}
+
+.contact-icon .items .icons{
+  font-size: 2rem;
+
+
+}
+
+
+
+
+@media (max-width: 768px) {
+
+  .nav_bar {
+    padding: 12px 18px;
+  }
+
+  /* Hide Desktop Nav */
+  .right {
+    position: fixed;
+    top: 70px;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px;
+    gap: 18px;
+    transition: 0.4s ease-in-out;
+    box-shadow: -4px 0 18px rgba(0,0,0,0.1);
+  }
+
+  /* Slide-in Menu */
+  .right.show_menu {
+    right: 0;
+  }
+
+  /* Show hamburger button */
+  .menu_btn {
+    display: block;
+  }
+
+  .nav_items {
+    margin-left: 0;
+    font-size: 16px;
+  }
+}
+
+/* ---------- Very Small Screens ---------- */
+@media (max-width: 480px) {
+  .nav_bar {
+    padding: 10px 14px;
+  }
+}
