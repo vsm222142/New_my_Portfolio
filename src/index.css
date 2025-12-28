@@ -3,8 +3,6 @@
   --bg-color:rgb(40,47,97);
 }
 
-
-
 body{
   background-color: rgb(11, 26, 51);
   color: white;
@@ -187,51 +185,3 @@ a{
 
 }
 
-
-
-
-@media (max-width: 768px) {
-
-  .nav_bar {
-    padding: 12px 18px;
-  }
-
-  /* Hide Desktop Nav */
-  .right {
-    position: fixed;
-    top: 70px;
-    right: -100%;
-    width: 70%;
-    height: 100vh;
-    background: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 25px;
-    gap: 18px;
-    transition: 0.4s ease-in-out;
-    box-shadow: -4px 0 18px rgba(0,0,0,0.1);
-  }
-
-  /* Slide-in Menu */
-  .right.show_menu {
-    right: 0;
-  }
-
-  /* Show hamburger button */
-  .menu_btn {
-    display: block;
-  }
-
-  .nav_items {
-    margin-left: 0;
-    font-size: 16px;
-  }
-}
-
-/* ---------- Very Small Screens ---------- */
-@media (max-width: 480px) {
-  .nav_bar {
-    padding: 10px 14px;
-  }
-}

@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 
 import pdf from "../pdf/Vishal_Resume_IT4.pdf";
 
-import hero from "./data/hero.json";
+// import hero from "./data/hero.json";
 
 import Typed from 'typed.js';
 
@@ -48,7 +48,7 @@ const Home = () => {
       data-aos-duration="1000"
         >
           <div className="img">
-            <img src={`/assets/${hero.imgSrc}`} alt="Hero_Image" />
+            <img src={"./assets/hero/Prt2.png"} alt="Hero_Image" />
           </div>
         </div>
       </div>

@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
+   base: "/My_New_Portfolio/",   // 👈 repo name same rakho
   plugins: [
     react({
       babel: {
@@ -11,3 +12,12 @@ export default defineConfig({
     }),
   ],
 })
+
+
+// import { defineConfig } from "vite";
+// import react from "@vitejs/plugin-react";
+
+// export default defineConfig({
+//   base: "/My_New_Portfolio/",   // 👈 repo name same rakho
+//   plugins: [react()],
+// });

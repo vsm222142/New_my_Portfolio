@@ -1,13 +1,50 @@
 import React from "react";
-import projects from "./data/projects.json";
+// import projects from "./data/projects.json";
 
 const Projects = () => {
+
+   const projectsData=[
+  {
+    "key": 1,
+    "title": "React E-Commerce",
+    "imageSrc": "https://cdn.pixabay.com/photo/2018/02/04/17/39/crypto-currency-3130381_640.jpg",
+    "description": "This is a project made with complete React js.",
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "key": 2,
+    "title": "MERN Blogging",
+    "imageSrc": "https://cdn.pixabay.com/photo/2017/05/02/15/30/streets-2278471_640.jpg",
+    "description": "This is a project made with complete React js.",
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "key": 3,
+    "title": "React Recipe",
+    "imageSrc": "https://cdn.pixabay.com/photo/2016/08/16/17/12/skyscrapers-1598418_640.jpg",
+    "description": "This is a project made with complete React js.",
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  },
+  {
+    "key": 4,
+    "title": "React Firebase App",
+    "imageSrc": "https://cdn.pixabay.com/photo/2021/03/02/01/07/cyberpunk-6061251_640.jpg",
+    "description": "This is a project made with complete React js.",
+    "demo": "https://www.example.com",
+    "source": "https://www.github.com"
+  }
+]
+
+
   return (
     <>
       <div className="container projects my-3">
         <h1><strong>Projects</strong></h1>
         <div className="row d-flex justify-content-center align-content-center">
-          {projects.map((data) => (
+          {projectsData.map((data) => (
             <>
               <div key={data.id} className="mx-4 my-4 col-sm-6 col-md-4 col-lg-3"
                data-aos="flip-right"
