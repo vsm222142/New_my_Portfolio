@@ -3,6 +3,11 @@
   --bg-color:rgb(40,47,97);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+
 body{
   background-color: rgb(11, 26, 51);
   color: white;
@@ -33,7 +38,7 @@ a{
 
 .home{
   display: flex;
-  height: 80vh;
+  min-height: 80vh;
   flex-wrap: wrap-reverse;
   justify-content: space-between;
   align-items: center;
@@ -185,3 +190,361 @@ a{
 
 }
 
+
+
+
+
+/* ===========================
+   🌗 Tablet — Navbar
+   =========================== */
+@media (max-width: 768px){
+
+  .nav_bar{
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .nav_bar .left{
+    font-size: 1.4rem;
+  }
+
+  .nav_bar .right{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .nav_bar .nav_items{
+    padding: 10px 12px;
+    font-size: 1rem;
+  }
+}
+
+
+/* ===========================
+   📱 Mobile — Navbar
+   =========================== */
+@media (max-width: 480px){
+
+  .nav_bar{
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .nav_bar .left{
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  .nav_bar .right{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .nav_bar .nav_items{
+    padding: 8px 12px;
+    font-size: 0.95rem;
+    max-width: 200px;
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+.menu_btn{
+  display: none;
+}
+
+@media (max-width: 768px){
+
+  .nav_bar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  /* 🔹 keeps button at right */
+    gap: 10px;
+  }
+
+  /* Toggle button always right */
+  .menu_btn{
+    display: block;
+    margin-left: auto;              /* 🔹 forces right alignment */
+    font-size: 1.8rem;
+    background: transparent;
+    color: yellow;
+    border: 2px solid yellow;
+    border-radius: 8px;
+    padding: 2px 10px;
+    cursor: pointer;
+  }
+
+  /* Hide menu initially */
+  .nav_bar .right{
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+    gap: 8px;
+    background-color: rgb(40,47,97);
+    border: 1px solid yellow;
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: var(--box-shadow);
+  }
+
+  /* When active */
+  .right.menu_active{
+    display: flex;
+  }
+
+  .nav_bar .nav_items{
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+
+
+/* ===========================
+   🌗 Tablet — Home
+   =========================== */
+@media (max-width: 768px){
+
+  .home{
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .home .left{
+    width: 90%;
+    margin: auto;
+  }
+
+  .home .right .img img{
+    width: 300px;
+    height: 300px;
+  }
+}
+
+
+/* ===========================
+   📱 Mobile — Home
+   =========================== */
+@media (max-width: 480px){
+
+  .home{
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .home .left{
+    width: 95%;
+    padding: 20px;
+  }
+
+  .home .right .img img{
+    width: 230px;
+    height: 230px;
+  }
+
+  .home .btn{
+    max-width: 220px;
+    width: 100%;
+  }
+}
+
+
+/* ===========================
+   🌗 Tablet — About
+   =========================== */
+@media (max-width: 768px){
+
+  .about{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .image{
+    width: 90%;
+    height: auto;
+  }
+
+  .image img{
+    width: 100%;
+    height: auto;
+  }
+
+  .about-items{
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+
+/* ===========================
+   📱 Mobile — About
+   =========================== */
+@media (max-width: 480px){
+
+  .about{
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .image{
+    width: 95%;
+  }
+
+  .image img{
+    width: 100%;
+    border-radius: 15px;
+  }
+
+  .about-items{
+    width: 95%;
+    padding: 18px;
+  }
+}
+
+
+/* ===========================
+   🌗 Tablet — Skills
+   =========================== */
+@media (max-width: 768px){
+
+  .skills{
+    width: 100%;
+    text-align: center;
+  }
+
+  .skills .items{
+    width: 95%;
+    margin: auto;
+  }
+
+  .skills .items .item{
+    width: calc(50% - 40px);
+    margin: 12px;
+  }
+}
+
+
+/* ===========================
+   📱 Mobile — Skills
+   =========================== */
+@media (max-width: 480px){
+
+  .skills .items .item{
+    width: 95%;
+    margin: 10px auto;
+    padding: 16px;
+  }
+
+  .skills .items .item img{
+    width: 55px;
+  }
+}
+
+
+
+/* ===========================
+   🌗 Tablet — Projects
+   =========================== */
+@media (max-width: 768px){
+
+  .projects h1{
+    text-align: center;
+  }
+
+  .projects .card{
+    width: 100% !important;
+    max-width: 320px;
+    margin: auto;
+  }
+
+  .projects .card-img-top{
+    width: 220px !important;
+    height: 220px !important;
+  }
+}
+
+
+/* ===========================
+   📱 Mobile — Projects
+   =========================== */
+@media (max-width: 480px){
+
+  .projects{
+    text-align: center;
+  }
+
+  .projects .col-sm-6,
+  .projects .col-md-4,
+  .projects .col-lg-3{
+    width: 100%;
+    padding: 0;
+  }
+
+  .projects .card{
+    width: 92% !important;
+    margin: 12px auto;
+  }
+
+  .projects .card-img-top{
+    width: 200px !important;
+    height: 200px !important;
+  }
+}
+
+
+/* ===========================
+   🌗 Tablet — Contact
+   =========================== */
+@media (max-width: 768px){
+
+  .contact-icon{
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px 0;
+  }
+
+  .contact-icon .items{
+    width: 65px;
+    height: 65px;
+  }
+}
+
+
+/* ===========================
+   📱 Mobile — Contact
+   =========================== */
+@media (max-width: 480px){
+
+  .contact-icon{
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 20px;
+  }
+
+  .contact-icon .items{
+    width: 60px;
+    height: 60px;
+  }
+
+  .contact-icon .icons{
+    font-size: 1.5rem;
+  }
+}

@@ -20,30 +20,30 @@ const Skills = () => {
       imageSrc: "skills/react.png",
     },
     {
-      title: "Node",
-      imageSrc: "skills/node.png",
+      title: "Java",
+      imageSrc: "skills/javalogo.png",
     },
     {
-      title: "Firebase",
-      imageSrc: "skills/firebase.png",
+      title: "Python",
+      imageSrc: "skills/Pythonlogo.png",
     },
     {
-      title: "GraphQL",
-      imageSrc: "skills/graphql.png",
+      title: "MySQL",
+      imageSrc: "skills/Mysql_logo.png",
     },
     {
-      title: "MongoDB",
-      imageSrc: "skills/mongodb.png",
+      title: "Git and Github",
+      imageSrc: "skills/gitandgithub_logo.png",
     },
     {
-      title: "Figma",
-      imageSrc: "skills/figma.png",
+      title: "VS Code",
+      imageSrc: "skills/Vscodelogo.png",
     },
   ];
 
   return (
     <>
-      <div className="container skills">
+      <div className="container skills" id="skills">
         <h1>
           <strong>Skills</strong>
         </h1>

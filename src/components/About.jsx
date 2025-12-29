@@ -22,7 +22,7 @@ const About = () => {
          data-aos-duration="1000">
           <img src={"./assets/hero/Prt1.png"} alt="" />
         </div>
-        <div className="about-contain">
+        <div className="about-contain" id="about">
           {aboutData.map((data) => {
             return (
               <>
